@@ -7,11 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <Compile Remove="model\**" />
+    <Content Remove="model\**" />
+    <EmbeddedResource Remove="model\**" />
+    <None Remove="model\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="model\" />
+    <PackageReference Include="Abp" Version="8.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
 </Project>
